@@ -215,7 +215,7 @@ h1{
     height:500px;
     width:310px;
     border-radius: 4px;
-    background-image: url('/Images/pic3\ -\ Copy.jpg');
+    background-image: url('pic3\ -\ Copy.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -230,7 +230,7 @@ h1{
     height:500px;
     width:310px;
     border-radius: 4px;
-    background-image: url('/Images/Pic2.jpg') ;
+    background-image: url('Pic2.jpg') ;
     background-size: contain ;
     position: relative;
     background-color: #fff;
@@ -242,7 +242,7 @@ h1{
     height:500px;
     width:310px;
     border-radius: 4px;
-    background-image: url('/Images/CAPFL.jpg') ;
+    background-image: url('CAPFL.jpg') ;
      
     background-size: contain ;
     position: relative;
@@ -258,7 +258,7 @@ h1{
     height:500px;
     width:310px;
     border-radius: 4px;
-    background-image: url('/Images/RedHat.jpg') ;
+    background-image: url('RedHat.jpg') ;
     background-size: 400px ;
     position: relative;
     background-size: contain;
@@ -272,7 +272,7 @@ h1{
     height:500px;
     width:310px;
     border-radius: 4px;
-    background-image: url('/Images/Al2.0.jpg') ;
+    background-image: url('Al2.0.jpg') ;
     background-size: 400px ;
     position: relative;
     background-size: contain;
@@ -286,7 +286,7 @@ h1{
     height:500px;
     width:310px;
     border-radius: 4px;
-    background-image: url('/Images/Aldis.jpg') ;
+    background-image: url('Aldis.jpg') ;
   
     background-size: contain;
     position: relative;
