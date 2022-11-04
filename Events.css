@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'kumbuh sans', sans-serif;
+     
+}
+body{
+    background-image: url(/space\ \(1\).jpg);
+}
+h1{
+    text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00FFFC;
+    margin-left: 100px;
+    margin-top: 100px;
+  
+ 
+}
+#Eh2{
+    color: black;
+    text-decoration: underline;
+    text-underline-position: below;
+    margin-top: 80px ;
+    margin-left: 100px;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 50px;
+   
+
+   
+}
+.navbar{
+  
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: 1.2 rem;
+    position:sticky;
+    top:0;
+    z-index: 999;
+
+
+}
+.navContaneur{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin:0 auto;
+    padding: 0 50px;
+
+}
+
+#navLOgo{
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-size:25px 25px;
+    width: 120px;
+    height: 120px;
+    margin: left 0px;
+   
+   
+}
+.fa_gem{
+    margin-right: 0.5rem;
+}
+.navbar_menu{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navLinks{
+    color:black ;
+    text-decoration: solid;
+    font-size: larger;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+
+}
+.navLinks:hover{
+   
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+@media screen and (max-width:960px) {
+    .navContaneur{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300 px;
+        padding: 0;
+
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position:absolute;
+       top:-1000px;
+       opacity:0;
+       transition: all 0.5s ease ;
+        height: 50vh;
+        z-index: -1; 
+        background-image: url(/space\ \(1\).jpg);
+        
+    }
+    .navbar_menu.active{
+        
+        top:100%;
+        opacity:1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height:50vh;
+        font-size: 1.6 rem;
+
+    }
+    #navLOgo{
+        padding-left: 35p;
+        width=10px;
+        height=10px;
+       
+
+    }
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #ffff;
+
+    }
+    .navbarItem{
+        width: 80%;
+    
+
+    }
+    .navLinks{
+        text-align: center;
+        padding: 1rem;
+        width: 150%;
+        display: table;
+    }
+    #mobile_menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%);
+    }
+    .navbar_toggle .bar{
+      display: block;
+      cursor: pointer;  
+    }
+    #mobile_menu.is-active.bar:nth-child(2){
+       opacity: 0;
+    
+    }
+    #mobile_menu.is-active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    
+    }
+    #mobile_menu.is-active.bar:nth-child(3){
+        transform: translate(-8px) rotate(-45deg);
+    
+    }
+    
+}
+/*Events section*/
+
+
+.aboutEv {
+    width: 800px;
+    height: 150px;
+    margin-left: 2rem;
+    font-size: larger;
+    font-size: 1.7rem;
+    color: black;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.events__container{
+   margin-top: 100px;
+    
+ display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 10px;
+
+  color: #444;
+   margin: 1rem;
+   
+   font-size: smaller;
+    
+}
+.events__card{
+    margin-left: 400px;
+    align-items: center;
+    margin: 2rem;
+    height:500px;
+    width:310px;
+    border-radius: 4px;
+    background-image: url('/Images/pic3\ -\ Copy.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    color: black;
+    font-size: 1rem;
+    background-color: #bf9251;
+ 
+}
+.events__card:nth-child(2){
+
+    margin:1rem;
+    height:500px;
+    width:310px;
+    border-radius: 4px;
+    background-image: url('/Images/Pic2.jpg') ;
+    background-size: contain ;
+    position: relative;
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+}.events__card:nth-child(3){
+
+    margin:1rem;
+    height:500px;
+    width:310px;
+    border-radius: 4px;
+    background-image: url('/Images/CAPFL.jpg') ;
+     
+    background-size: contain ;
+    position: relative;
+    background-color: black;
+    background-repeat: no-repeat;
+    color: white;
+
+
+}
+.events__card:nth-child(4){
+
+    margin:1rem;
+    height:500px;
+    width:310px;
+    border-radius: 4px;
+    background-image: url('/Images/RedHat.jpg') ;
+    background-size: 400px ;
+    position: relative;
+    background-size: contain;
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+}
+.events__card:nth-child(5){
+
+    margin:1rem;
+    height:500px;
+    width:310px;
+    border-radius: 4px;
+    background-image: url('/Images/Al2.0.jpg') ;
+    background-size: 400px ;
+    position: relative;
+    background-size: contain;
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+}
+.events__card:nth-child(6){
+
+    margin:1rem;
+    height:500px;
+    width:310px;
+    border-radius: 4px;
+    background-image: url('/Images/Aldis.jpg') ;
+  
+    background-size: contain;
+    position: relative;
+    background-color:  #232323;
+    background-repeat: no-repeat;
+    color: #ffff;
+
+}
+.events__container h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  
+}
+.EVCH2{
+margin-top: 15px;
+
+}
+.events p{
+    margin-bottom: 10px;
+    font-size: small;
+    position:absolute;
+    top: 400px;
+    left:30px
+}
+
+.events__card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+   
+}
+.outer_footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+@media screen and (max-width:768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .aboutEv p{
+        width:400px;
+        height: 100px;
+        margin-left: -150px;
+    }
+    #Eh2{
+        font-size: 1.3rem;
+    }
+    
+    .events__container{
+     margin-top: 100px;
+    display: grid;
+   grid-template-columns: 100px ;
+    grid-gap: 10px;
+         
+ color: #444;
+  margin: 1rem;
+            
+   font-size: smaller;
+             
+    
+}
+
+
